@@ -115,7 +115,7 @@ nav {
 
 .list-darkmode-menu li a::before {
     content: '';
-    personally: absolute;
+    position: absolute;
     bottom: -7px;
     left: 0;
     width: 0;
