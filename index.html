@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
     <title>Portafolio</title>
 </head>
+
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <nav>
                 <div class="logo">
                     <a href="#"><span>Giselle</span> Fonte</a>
                 </div>
+                <button class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
                 <div class="list-darkmode-menu">
-                    <ul>
+                    <ul class="nav-menu">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
@@ -28,14 +35,187 @@
                         <i class="fa-solid fa-sun"></i>
                         <i class="fa-solid fa-moon"></i>
                     </label>
-                    <button class="hamburger">
-                        <div class="bar"></div>
-                    </button>
                 </div>
             </nav>
         </div>
     </header>
-    <footer></footer>
+
+    <!-- Home -->
+    <section id="home" class="home">
+        <div class="container">
+            <div class="home-info">
+                <div class="left">
+                    <h3>Hello, I'm</h3>
+                    <h1>Giselle Fonte</h1>
+                    <h4>I'm a <span class="multiple"></span></h4>
+                    <p>
+                        Hi! I'm Giselle Fonte, a passionate tech enthusiast dedicated to crafting innovative and
+                        user-centered digital experiences. I create visually stunning and intuitive UX/UI designs that
+                        bring ideas to life. With a curious and analytical mindset, I excel at uncovering bugs and
+                        ensuring flawless performance as a QA Tester.
+                        My drive for learning keeps me ahead in the fast-evolving tech world, always ready to tackle new
+                        challenges. Whether coding robust applications, designing engaging interfaces, or meticulously
+                        testing for quality, I’m fueled by creativity, precision, and a commitment to excellence.
+                    </p>
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/giselacolmeiro/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://github.com/gissestephy" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="mailto:gisselastephaniecolmeiro@gmail.com" target="_blank"><i
+                                class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="profile">
+                        <img src="img/profile.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I am?</h3>
+                    <p class="highlight">A passionate for technology.</p>
+                    <p>
+                        I live in Buenos Aires, Argentina. I've a passion for creating dynamic, user-friendly websites
+                        and applications that bring ideas to life.
+                        I'm detail oriented and have great problem solving skills, ensuring every project is delivered
+                        on time and with the highest quality.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Mis habilidades</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+                        <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                        <div class="skill-card"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                        <div class="skill-card"><i class="fab fa-react"></i><span>React</span></div>
+                        <div class="skill-card"><i class="fab fa-python"></i><span>Python</span></div>
+                        <div class="skill-card"><i class="fab fa-figma"></i><span>Figma</span></div>
+                        <div class="skill-card"><i class="fas fa-database"></i><span>SQL</span></div>
+                        <div class="skill-card"><i class="fa-brands fa-android"></i><span>Android Studio</span></div>
+                        <div class="skill-card"><i class="fab fa-php"></i><span>PHP</span></div>
+                        <div class="skill-card"><i class="fas fa-project-diagram"></i><span>Met. Agile</span></div>
+                        <div class="skill-card"><i class="fas fa-sync-alt"></i><span>Jira</span></div>
+                        <div class="skill-card"><i class="fab fa-linux"></i><span>Linux</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>My <span>Services</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Building responsive and dynamic websites using the latest technologies.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <h3>UX/UI Design</h3>
+                    <p>Creating user-centered designs that are both visually appealing and functional.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-vial"></i>
+                    <h3>QA Testing</h3>
+                    <p>Ensuring software quality through meticulous testing and bug tracking.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My <span>Portfolio</span></h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-card" style="--i: 1;">
+                    <img src="img/humaya.jpg" alt="Alfajores Humaya">
+                    <div class="overlay">
+                        <h3>Humaya</h3>
+                        <p>Sitio web diseñado para Humaya, una marca con más de 50 años de tradición.</p>
+                        <a href="https://humaya-react.netlify.app" target="_blank" class="portfolio-btn">Ver sitio</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="--i: 2;">
+                    <img src="img/travelbike2.jpg" alt="Travel Bike">
+                    <div class="overlay">
+                        <h3>Travel Bike</h3>
+                        <p>Aplicación diseñada para conocer la ciudad de Buenos Aires y pasar un agradable momento entre
+                            amigos.</p>
+                        <a href="" target="_blank" class="portfolio-btn">Ver sitio</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="--i: 3;">
+                    <img src="img/ecourban.jpg" alt="EcoUrban">
+                    <div class="overlay">
+                        <h3>EcoUrban</h3>
+                        <p>Aplicación web para promover el reciclaje urbano.</p>
+                        <a href="" target="_blank" class="portfolio-btn">Ver sitio</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="--i: 4;">
+                    <img src="img/club.jpg" alt="Club Deportivo">
+                    <div class="overlay">
+                        <h3>SportifyClub</h3>
+                        <p>Aplicación diseñada en Android Studio para administrar los clientes de un club.</p>
+                        <a href="" target="_blank" class="portfolio-btn">Ver sitio</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="--i: 5;">
+                    <img src="img/tarjtop.jpg" alt="Joyería Topacio">
+                    <div class="overlay">
+                        <h3>Joyería Topacio</h3>
+                        <p>Página web inspirada en el diseño de la tarjeta de presentación del negocio, reflejando su
+                            imagen de marca en formato digital.</p>
+                        <a href="https://topaciojoyas.netlify.app/" target="_blank" class="portfolio-btn">Ver sitio</a>
+                    </div>
+                </div>
+                <div class="portfolio-card" style="--i: 6;">
+                    <img src="img/f1.jpg" alt="F1">
+                    <div class="overlay">
+                        <h3>F1</h3>
+                        <p>Prototipo de una aplicación sobre F1.</p>
+                        <a href="" target="_blank" class="portfolio-btn">Ver sitio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact <span>Me</span></h2>
+            <form action="https://formspree.io/f/mzzkbzew" method="POST">
+                <input type="hidden" name="_subject" value="Nuevo mensaje desde el portafolio">
+                <input type="hidden" name="_next" value="/gracias.html">
+                <div class="input-box">
+                    <input type="text" name="name" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="input-box">
+                    <input type="tel" name="phone" placeholder="Celular">
+                    <input type="text" name="subject" placeholder="Asunto">
+                </div>
+                <textarea name="message" cols="30" rows="10" placeholder="Deja tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="main.js"></script>
 </body>
+
 </html>
